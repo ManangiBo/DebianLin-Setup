@@ -43,7 +43,7 @@ The easiest and recommended way to install Visual Studio Code on Debian 10 syste
    ```
    sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev
    ```
-2. Download [the latest available version of Python].(https://www.python.org/downloads/source/)
+2. Download [the latest available version of Python](https://www.python.org/downloads/source/).
    ```
    wget https://www.python.org/ftp/python/3.11.2/Python-3.11.2.tgz
    ```   
@@ -69,7 +69,7 @@ The easiest and recommended way to install Visual Studio Code on Debian 10 syste
    ```
    python3.11.2 --version
    ```
-***[Install Python Modules & Create a Python Virtual Environment]***(https://computingforgeeks.com/how-to-install-python-on-debian-linux/)
+[***Install Python Modules & Create a Python Virtual Environment***](https://computingforgeeks.com/how-to-install-python-on-debian-linux/).
 
 
    
