@@ -5,6 +5,12 @@
 sudo apt update
 ```
 #
+### Instal BytzVPN
+
+#
+### Install Pasword Manager
+
+#
 ### Install git
 ```
 sudo apt install git
@@ -43,7 +49,7 @@ The easiest and recommended way to install Visual Studio Code on Debian 10 syste
    ```
    sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev
    ```
-2. Then download Python from the [official Python release page](https://www.python.org/downloads/source/). While on this page, download the Python ***Gzippeed tarball***. Alternatively, get the download link and pull it with Wget as shown.
+2. Then download Python from the [official Python release page](https://www.python.org/downloads/source/). While on this page, download the Python **Gzippeed tarball**. Alternatively, get the download link and pull it with Wget as shown.
    ```
    wget https://www.python.org/downloads/release/python-3112/Python-3.11.2.tgz
    ```   
@@ -70,7 +76,30 @@ The easiest and recommended way to install Visual Studio Code on Debian 10 syste
    python3.11.2 --version
    ```
 [***Install Python Modules & Create a Python Virtual Environment***](https://computingforgeeks.com/how-to-install-python-on-debian-linux/).
+#
+### Install LedgerLive
+1. Navigate to [Ledger-live Downloads](https://www.ledger.com/ledger-live).
+2. Download the Ledger Live AppImage.
+3. in the terminal move to the download folder and make the file executable: 
+   ```
+   chmod +x ledger-live-*.AppImage
+   ```
+4. Enter the following command to automatically add the udev rules and reload udev to allow USB access to your Ledger device:
+   ```
+   wget -q -O - https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_udev_rules.sh | sudo bash
+   ```
+   **Note**: New versions of Ubuntu 22.04 LTS require adding the following commands after **wget**:
 
+   `sudo add-apt-repository universe`
+   `sudo apt install libfuse2`___(3-3)___
+5. Launch the AppImage via your terminal:
+   ```
+   ./ledger-live-desktop-*.AppImage
+   ```
+   **Note:** in case you get a **sandboxing error**, please run the following command: 
+   ```
+   ./ledger-live-desktop-*.AppImage --no-sandbox
+   ```
+#
 
-   
    
