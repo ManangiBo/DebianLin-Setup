@@ -9,6 +9,9 @@ sudo apt update
 
 #
 ### Install Pasword Manager
+#
+### Configure firewall
+UFW, or Uncomplicated Firewall, provides an easy to use interface for inexperienced Linux users to set up the Linux firewall.
 
 #
 ### Install git
@@ -126,4 +129,17 @@ The easiest and recommended way to install Visual Studio Code on Debian 10 syste
 sudo apt install brave-browser
 ```
 #
+### Speed up the boot time
+The default settings for the GRUB timeout menu selection during the system boot is 5 seconds. To change this value, 1. open the GRUB configuration file by using the following command:
+   ```
+   sudo nano /etc/default/grub
+   ```
+2. Change the delay value to 0 seconds, by setting `GRUB_TIMEOUT=0:`
+Once you are done, press Ctrl+O and Ctrl+X to save and exit Then update your GRUB settings by using the command:
+   ```
+   sudo update-grub
+   ```
+`
+
+
 
