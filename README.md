@@ -106,36 +106,39 @@ The easiest and recommended way to install Visual Studio Code on Debian 10 syste
 #
  ### Install Brave Browser
  
- 1. You need the curl function installed, to do so run the command:
-    ```
-    sudo apt install curl
-    ```
+1. You need the curl function installed, to do so run the command:
+   ```
+   sudo apt install curl
+   ```
 2. key
+```
+`  sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-          release.s3.brave.com/brave-browser-archive-keyring.gpg
    ```
-`  sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-          release.s3.brave.com/brave-browser-archive-keyring.gpg```
-
-   
 3. Echo
-   ```
-`  echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list```
-
-   
+```
+`  echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+```
+  
 4. Update
    ```
    `sudo apt update
    ```
 5. Install 
-```
-sudo apt install brave-browser
-```
+   ```
+   sudo apt install brave-browser
+   ```
 #
 ### Speed up the boot time
-The default settings for the GRUB timeout menu selection during the system boot is 5 seconds. To change this value, 1. open the GRUB configuration file by using the following command:
+The default settings for the GRUB timeout menu selection during the system boot is 5 seconds. To change this value, 
+
+
+1. open the GRUB configuration file by using the following command:
    ```
    sudo nano /etc/default/grub
    ```
 2. Change the delay value to 0 seconds, by setting `GRUB_TIMEOUT=0:`
-Once you are done, press Ctrl+O and Ctrl+X to save and exit Then update your GRUB settings by using the command:
+Once you are done, press `Ctrl+O` and `Ctrl+X` to save and exit 
+3. Then update your GRUB settings by using the command:
    ```
    sudo update-grub
    ```
