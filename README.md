@@ -1,15 +1,15 @@
 # DebianLin-Setup
-
+#
 ### Install updates
 ```
 sudo apt update
 ```
-
+#
 ### Install git
 ```
 sudo apt install git
 ```
-
+#
 ### Install VS Code
 The most preferred method of installing Visual Code Studio on Debian based systems is by enabling the VS code repository and installing the Visual Studio Code package using the apt package manager.
 
@@ -30,3 +30,4 @@ $ sudo sh -c 'echo "deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/packages.mi
 $ sudo apt update
 $ sudo apt install code
 ```
+#
