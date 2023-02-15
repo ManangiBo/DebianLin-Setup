@@ -13,6 +13,27 @@ sudo apt update
 ### Configure firewall
 UFW, or Uncomplicated Firewall, provides an easy to use interface for inexperienced Linux users to set up the Linux firewall.
 
+
+1. Install Debian UFW by running the command:
+   ```
+   sudo apt-get install ufw -y
+   ```
+2. Start UFW service and enable it to start on boot time by running the following linux command:
+   ```
+   sudo ufw enable
+   ```
+3. Check the status of UFW 
+   ``´
+   apt ufw status
+   ```
+   You shuld see the output: `Status: active`
+   
+   
+4. disable UFW firewall:
+   ```
+   apt ufw disable
+   ```
+
 #
 ### Install git
 ```
