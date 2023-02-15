@@ -75,7 +75,8 @@ The easiest and recommended way to install Visual Studio Code on Debian 10 syste
 [***Install Python Modules & Create a Python Virtual Environment***](https://computingforgeeks.com/how-to-install-python-on-debian-linux/).
 #
 #
-## Install LedgerLive
+## ![Install LedgerLive](https://i1.wp.com/www.uniquenewsonline.com/wp-content/uploads/2021/03/Ledger-live.png?resize=768%2C432&ssl=1)
+
 1. Navigate to [Ledger-live Downloads](https://www.ledger.com/ledger-live).
 2. Download the Ledger Live AppImage.
 3. in the terminal move to the download folder and make the file executable: 
