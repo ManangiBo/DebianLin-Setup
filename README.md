@@ -149,6 +149,13 @@ The easiest and recommended way to install Visual Studio Code on Debian 10 syste
    sudo apt install brave-browser
    ```
 #
+### Install [Quickemu](https://github.com/quickemu-project/quickemu) vertual 
+1. Install dependencies for Debian System 
+```
+   sudo apt install qemu bash coreutils ovmf grep jq lsb procps python3 genisoimage usbutils util-linux sed spice-client-gtk swtpm wget xdg-user-dirs zsync unzip
+```
+
+#
 ### Speed up the boot time
 The default settings for the GRUB timeout menu selection during the system boot is 5 seconds. To change this value, 
 
