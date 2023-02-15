@@ -5,6 +5,16 @@
 sudo apt update
 ```
 #
+### Install [gedit](https://installati.one/debian/11/gedit/)
+   ```
+   Sudo apt -y install gedit
+   ```
+#
+### Install git
+   ```
+   sudo apt install git
+   ```
+#
 ### Instal [BytzVPN](https://bytzvpn.com/installation.php)
 
 #
@@ -33,14 +43,8 @@ UFW, or Uncomplicated Firewall, provides an easy to use interface for inexperien
    ```
    apt ufw disable
    ```
-
 #
-### Install git
-```
-sudo apt install git
-```
-#
-### Install VS Code
+## Install VS Code
 The easiest and recommended way to install Visual Studio Code on Debian 10 systems is to enable the VS Code repository and install the VS Code package through the command line:
 
 
@@ -68,40 +72,10 @@ The easiest and recommended way to install Visual Studio Code on Debian 10 syste
    sudo apt install code
    ```
 #
-### Dowload and install latest python version 
-1. Install the required dependencies to be able to build Python 3.10 from the source.
-   ```
-   sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev
-   ```
-2. Then download Python from the [official Python release page](https://www.python.org/downloads/source/). While on this page, download the Python **Gzippeed tarball**. Alternatively, get the download link and pull it with Wget as shown.
-   ```
-   wget https://www.python.org/downloads/release/python-3112/Python-3.11.2.tgz
-   ```   
-3. With the tarball downloaded, extract it as below.
-   ```
-   tar -xf Python-3.10.*.tgz
-   ```
-4. Navigate into the extracted directory and run the configure command to check if the required dependencies are available. In the command, the –enable-optimizations flag is used to optimize the binary and run multiple tests
-   ```
-   cd Python-3.10.*/
-   ./configure --enable-optimizations
-   ```
-5. When the check is complete, build Python 3.10 from the source as below. Remember to speed up the process by using the `-j` flag. This specifies the number of cores in your system. `nproc` command shows your system cores.
-   ```
-   make -j 4
-   ```
-6. When make is complete, proceed and install Python 3.10 on Debian 11|10 as below.
-   ```
-   sudo make altinstall
-   ```
-   The altinstall flag is used to maintain the default Python binary path in /usr/bin/python.
-7. Verify your installation.
-   ```
-   python3.11.2 --version
-   ```
 [***Install Python Modules & Create a Python Virtual Environment***](https://computingforgeeks.com/how-to-install-python-on-debian-linux/).
 #
-### Install LedgerLive
+#
+## Install LedgerLive
 1. Navigate to [Ledger-live Downloads](https://www.ledger.com/ledger-live).
 2. Download the Ledger Live AppImage.
 3. in the terminal move to the download folder and make the file executable: 
@@ -116,7 +90,45 @@ The easiest and recommended way to install Visual Studio Code on Debian 10 syste
 
    `sudo add-apt-repository universe`
    `sudo apt install libfuse2`___(3-3)___
-5. Launch the AppImage via your terminal:
+   
+   
+5. Extract icon file and .desktop file
+   ```
+   Cd ~/Downloads
+   ./ledger-live*.AppImage --appimage-extract
+   ```
+   This creates the folder `squashfs-root`
+   
+6. Make `icons` and `applications` directorys(if not already ins /usr/share)
+   ```
+   sudo mkdir -p /usr/share/icons
+   ```
+   ```
+   sudo mkdir -p /usr/share/applications
+   ```
+   
+7. Copy files to the share folder
+   ```
+   sudo cp ledger-live*.desktop /usr/share/applications
+   ```
+   ```
+   sudo cp ledger-live*.png /usr/share/icons
+   ``` 
+8. navigate to .desktop file
+   ```
+   cd /usr/share/applications
+   ```
+9. Edit the .desktop file
+   ```
+   sudo gedit ledger-live-desktop.desktop
+   ```
+   ***Note:***`ǵedit` needs to be installed(see top)
+   
+   
+   In the ledger live desktop.desktop file, find `Èxec=`and type the full path of the Ledger-Live-Desktop location.
+   
+   
+10. Optional launch the AppImage via your terminal:
    ```
    ./ledger-live-desktop-*.AppImage
    ```
@@ -124,6 +136,7 @@ The easiest and recommended way to install Visual Studio Code on Debian 10 syste
    ```
    ./ledger-live-desktop-*.AppImage --no-sandbox
    ```
+#
 #
  ### Install Brave Browser
  
