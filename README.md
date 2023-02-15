@@ -22,8 +22,8 @@ UFW, or Uncomplicated Firewall, provides an easy to use interface for inexperien
    ```
    sudo ufw enable
    ```
-3. Check the status of UFW 
-   ``´
+3. Check the status of UFW:
+   ```
    apt ufw status
    ```
    You shuld see the output: `Status: active`
