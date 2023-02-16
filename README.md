@@ -2,7 +2,7 @@
 #
 ### Install updates
 ```
-sudo apt update
+sudo apt update && upgrade -y
 ```
 #
 ### Install [gedit](https://installati.one/debian/11/gedit/)
@@ -15,7 +15,44 @@ sudo apt update
    sudo apt install git
    ```
 #
-### Instal [BytzVPN](https://bytzvpn.com/installation.php)
+## Instal [BytzVPN](https://bytzvpn.com/installation.php)
+1. Install the OpenVPN client in the following way depending on what version of Linux you're using.
+   ```
+   sudo apt install openvpn 
+   ```
+2. When on desktop, you'll have to install the network-manager-openvpn package to change VPN settings via a GUI.
+   ```
+   sudo apt install network-manager-openvpn
+   ```
+3. Once you install the packages, start up OpenVPN to make sure it works properly. Then enable it so that it starts automatically upon startup, thus eliminating the need to start from scratch and re-enter credentials upon each startup. Check its status too.
+   ```
+   sudo systemctl start openvpn
+   sudo systemctl enable openvpn
+   sudo systemctl status openvpn
+   ```
+4. Next you'll need to import the .ovpn profile for whichever region you select.
+   ```
+   d ~
+   scp [insert profile name here]
+   ```
+5. Go to system Settings and then Network. Click the plus sign next to VPN.
+
+6. In the next window, click "import from profile" and select the .ovpn file of the profile you want.
+
+7. For non-Ubuntu systems, click on the network settings in system, check Network Connections, then click the plus sign to create a new connection. Select "Import a saved VPN configuration..." and press "Create".
+
+8. After importing the .ovpn file, viewing the settings, and importing the credentials from Settings>My Account Settings>View VPN Credentials (on Brax.Me) click "Add".
+
+9. Once you import it successfully, activate the OpenVPN under "Network".
+
+10. Use $ip add to view the network tunnel interface for the newly installed VPN.
+
+
+
+
+
+
+
 
 #
 ### Install Pasword Manager
