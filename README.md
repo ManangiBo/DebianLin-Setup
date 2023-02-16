@@ -200,6 +200,9 @@ The easiest and recommended way to install Visual Studio Code on Debian 10 syste
    ```
    sudo apt install brave-browser
    ```
+   
+   
+[**Backup browser file**](https://www.addictivetips.com/ubuntu-linux-tips/back-up-the-brave-browser-profile/)
 #
 ### Install [Quickemu](https://github.com/quickemu-project/quickemu) vertual 
 1. Install dependencies for Debian System 
