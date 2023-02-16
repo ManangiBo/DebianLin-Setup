@@ -2,7 +2,7 @@
 #
 ### Install updates
 ```
-sudo apt update && upgrade -y
+sudo apt update
 ```
 #
 ### Install [gedit](https://installati.one/debian/11/gedit/)
@@ -15,26 +15,38 @@ sudo apt update && upgrade -y
    sudo apt install git
    ```
 #
-## Instal [BytzVPN](https://bytzvpn.com/installation.php)
+### Instal [BytzVPN](https://bytzvpn.com/installation.php)
+[check video](https://www.youtube.com/watch?v=aWRbs07z9Po)
+
+
+[check FAQ](https://brax.me/prod/console.php)
+
+Help for MXLinux installing BytzVPN  
+
+.
 1. Install the OpenVPN client in the following way depending on what version of Linux you're using.
-   ```
-   sudo apt install openvpn 
-   ```
+
+$ sudo apt install openvpn #Ubuntu/Debian
+$ sudo yum install openvpn #CentOS 8/7/6
+$ sudo dnf install openvpn #Fedora 22+/CentOS 8
+
 2. When on desktop, you'll have to install the network-manager-openvpn package to change VPN settings via a GUI.
-   ```
-   sudo apt install network-manager-openvpn
-   ```
+
+$ sudo yum install network-manager-openvpn #CentOS 8/7/6
+$ sudo apt install network-manager-openvpn #Ubuntu/Debian
+$ sudo dnf install network-manager-openvpn #Fedora 22+/CentOS 8
+
 3. Once you install the packages, start up OpenVPN to make sure it works properly. Then enable it so that it starts automatically upon startup, thus eliminating the need to start from scratch and re-enter credentials upon each startup. Check its status too.
-   ```
-   sudo systemctl start openvpn
-   sudo systemctl enable openvpn
-   sudo systemctl status openvpn
-   ```
+
+$ sudo systemctl start openvpn
+$ sudo systemctl enable openvpn
+$ sudo systemctl status openvpn
+
 4. Next you'll need to import the .ovpn profile for whichever region you select.
-   ```
-   d ~
-   scp [insert profile name here]
-   ```
+
+$ cd ~
+$ scp [insert profile name here]
+
 5. Go to system Settings and then Network. Click the plus sign next to VPN.
 
 6. In the next window, click "import from profile" and select the .ovpn file of the profile you want.
@@ -52,11 +64,18 @@ sudo apt update && upgrade -y
 
 
 
-
-
 #
 ### Install Pasword Manager
 #
+### Setup Email client
+    Install
+    ```
+    sudo apt install kmail
+    ´´´
+    
+    
+    
+    
 ### Configure firewall
 UFW, or Uncomplicated Firewall, provides an easy to use interface for inexperienced Linux users to set up the Linux firewall.
 
@@ -113,7 +132,7 @@ The easiest and recommended way to install Visual Studio Code on Debian 10 syste
 #
 #
 ## Install LedgerLive
-!(https://i1.wp.com/www.uniquenewsonline.com/wp-content/uploads/2021/03/Ledger-live.png?resize=768%2C432&ssl=1)
+       ![Ledger Logo](https://i1.wp.com/www.uniquenewsonline.com/wp-content/uploads/2021/03/Ledger-live.png?resize=768%2C432&ssl=1)
 
 1. Navigate to [Ledger-live Downloads](https://www.ledger.com/ledger-live).
 2. Download the Ledger Live AppImage.
@@ -177,7 +196,7 @@ The easiest and recommended way to install Visual Studio Code on Debian 10 syste
    ```
 #
 #
- ### Install Brave Browser
+ ## Install Brave Browser
  
 1. You need the curl function installed, to do so run the command:
    ```
@@ -200,10 +219,19 @@ The easiest and recommended way to install Visual Studio Code on Debian 10 syste
    ```
    sudo apt install brave-browser
    ```
-   
-   
-[**Backup browser file**](https://www.addictivetips.com/ubuntu-linux-tips/back-up-the-brave-browser-profile/)
-#
+### Browser setup
+***Extentions***
+  - Authenticator - 2 Factor for websites
+  - Click and Clean - History and Cache cleaning
+  - GoFullPage - Full Page Screen Capture
+  - Bitwarden - Password Management 
+  - Web Highlights - Highlight parts of a webpage
+  - MetaMask - Wallet
+  - Phantom - Wallet 
+  - Midnight Lizard - Dark mode everywhere
+  - Momentum
+[***Backup***](https://www.addictivetips.com/ubuntu-linux-tips/back-up-the-brave-browser-profile/)
+# 
 ### Install [Quickemu](https://github.com/quickemu-project/quickemu) vertual 
 1. Install dependencies for Debian System 
 ```
