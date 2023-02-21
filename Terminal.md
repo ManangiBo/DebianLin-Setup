@@ -11,7 +11,7 @@ cp .bashrc bashrc.backup
 ```
 this step is not necessary but if you unsure about what you are doing a backup is always a good place to go back to if things go wrong.
 #
-**2. [Install Homebrew](https://brew.sh/)**
+2. **[Install Homebrew](https://brew.sh/)**
      ```
      /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
      ```
@@ -30,12 +30,12 @@ this step is not necessary but if you unsure about what you are doing a backup i
      ```
      The installation script installs Homebrew to `/home/linuxbrew/.linuxbrew` using sudo
 # 
-**3. [Install OhMyPosh](https://ohmyposh.dev/docs/installation/linux )
+3. **[Install OhMyPosh](https://ohmyposh.dev/docs/installation/linux)**
      ```
      brew install jandedobbeleer/oh-my-posh/oh-my-posh
      ```
 #
-**3. Install zshell
+3. Install zshell
  
      ```
      sudo apt install zsh
@@ -49,7 +49,7 @@ this step is not necessary but if you unsure about what you are doing a backup i
    - Reboot sesion
    - By opening up the terminal you will be created with the Z Shell configuration function type `2`
 #
-**4. [Install oh-my-posh](https://ohmyposh.dev/docs/installation/linux)**
+4. **[Install oh-my-posh](https://ohmyposh.dev/docs/installation/linux)**
    - Install curl
      ```
      sudo apt install curl
