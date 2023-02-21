@@ -10,10 +10,8 @@ after you located your .bashrc file type the following command to make a copy fo
 cp .bashrc bashrc.backup
 ```
 this step is not necessary but if you unsure about what you are doing a backup is always a good place to go back to if things go wrong.
-
-Go to GitHub andersongora/[synth-shell](https://github.com/andresgongora/synth-shell)
 #
-**2. Install Homebrew**
+**2. [Install Homebrew](https://brew.sh/)**
      ```
      /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
      ```
@@ -30,9 +28,12 @@ Go to GitHub andersongora/[synth-shell](https://github.com/andresgongora/synth-s
      ```
      echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.profile
      ```
-    The installation script installs Homebrew to `/home/linuxbrew/.linuxbrew` using sudo
-   
-     
+     The installation script installs Homebrew to `/home/linuxbrew/.linuxbrew` using sudo
+# 
+**3. [Install OhMyPosh](https://ohmyposh.dev/docs/installation/linux )
+     ```
+     brew install jandedobbeleer/oh-my-posh/oh-my-posh
+     ```
 #
 **3. Install zshell
  
