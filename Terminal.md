@@ -15,24 +15,43 @@ this step is not necessary but if you unsure about what you are doing a backup i
      ```
      /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
      ```
-   - Add Homebrew to your `PATH` and to your bash shell profile script, `~/.profile` on Debian/Ubuntu
+     The installation script installs Homebrew to `/home/linuxbrew/.linuxbrew` 
+   - Install build tools
      ```
-     test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
+     sudo apt-get install build-essential procps curl file git
+     ``
+#
+3. **Add Homebrew to your `PATH` and to your bash shell profile script, `~/.profile` on Debian/Ubuntu**
+    - Open .bashrc and .profile files:
      ```
+     gedit .bashrc
+     gedit .profile
      ```
-     test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-     ```
-     ```
-     test -r ~/.profile && echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.profile
-     ```
-     ```
-     echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.profile
-     ```
-     The installation script installs Homebrew to `/home/linuxbrew/.linuxbrew` using sudo
+     
+    - Enter the following commands on the very bottom of the file:
+      ```
+      test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
+      test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+      test -r ~/.profile && echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.profile
+      echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.profile
+      ```
+    - Save file and restart the terminal.
+    - Check path:
+      ```
+      echo $PATH
+      ```
 # 
 3. **[Install OhMyPosh](https://ohmyposh.dev/docs/installation/linux)**
      ```
      brew install jandedobbeleer/oh-my-posh/oh-my-posh
+     ```
+   - Update
+     ```
+     brew update && brew upgrade oh-my-posh
+     ```
+     In case you see strange behaviour in your shell, reload it after upgrading Oh My Posh. For example in zsh:
+     ```
+     brew update && brew upgrade && exec zsh
      ```
 #
 3. Install zshell
