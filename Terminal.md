@@ -18,6 +18,8 @@ this step is not necessary but if you unsure about what you are doing a backup i
        sudo chmod +x /usr/local/bin/oh-my-posh
        ```
        These files will be saved under:`/usr/Local/bin/oh-my-posh`
+       
+       
    - Download the themes
         ```
         mkdir ~/.poshthemes
@@ -26,7 +28,7 @@ this step is not necessary but if you unsure about what you are doing a backup i
         chmod u+rw ~/.poshthemes/*.json
         rm ~/.poshthemes/themes.zip
         ```
-       These files will be saved under:`/home/user/.poshthemes
+       These files will be saved under:`/home/user/.poshthemes`
 #
 ## Fonts
    - Download and setup [Nerd Fonds](https://www.nerdfonts.com/font-downloads)
