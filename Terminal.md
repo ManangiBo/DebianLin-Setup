@@ -11,12 +11,13 @@ cp .bashrc bashrc.backup
 ```
 this step is not necessary but if you unsure about what you are doing a backup is always a good place to go back to, if things go wrong.
 # 
-1. **[Install OhMyPosh](https://calebschoepp.com/blog/2021/how-to-setup-oh-my-posh-on-ubuntu/)**
-        ```
-         sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O   /usr/local/bin/oh-my-posh
-         sudo chmod +x /usr/local/bin/oh-my-posh
-        ```
-        These files will be saved under:`/usr/Local/bin/oh-my-posh
+## Oh-My-Posh
+   - [Install OhMyPosh](https://calebschoepp.com/blog/2021/how-to-setup-oh-my-posh-on-ubuntu/)
+       ```
+       sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
+       sudo chmod +x /usr/local/bin/oh-my-posh
+       ``
+       These files will be saved under:`/usr/Local/bin/oh-my-posh
    - Download the themes
         ```
         mkdir ~/.poshthemes
