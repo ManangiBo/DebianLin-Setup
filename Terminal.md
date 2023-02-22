@@ -32,7 +32,7 @@ this step is not necessary but if you unsure about what you are doing a backup i
 #
 ## Fonts
    - Download and setup [Nerd Fonds](https://www.nerdfonts.com/font-downloads)
-   - Click to: [Download MesloLG Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/Meslo.zip).
+   - Click to: [Download MesloLG Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/Meslo.zip). or [Download Hack Nerd Fonts](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/Hack.zip)
 
         ```
         cd ~
