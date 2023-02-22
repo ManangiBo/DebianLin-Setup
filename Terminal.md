@@ -2,18 +2,20 @@
 To open Terminal use SHORTCUT: Ctrl+Alt+T
 #
 **1. Locate and backup bash file**
-[Source](https://www.youtube.com/watch?v=jS-QZKjAd-U)
-Before you macke any changes, go to your home directory and backup the .bashrc file. Note taht all files starting with a `.` are invisibil wit the `ls` command, to list hidden files type `ls -a`. 
+Before you make any changes, go to your `home directory` and backup the `.bashrc` file. Note taht all files starting with a `.` are invisibil wit the `ls` command, to list hidden files type `la`or `ls -a`. 
 
-after you located your .bashrc file type the following command to make a copy for backup purboses: 
+
+after you located your `.bashrc`file type the following command to make a copy for backup purboses: 
 ```
 cp .bashrc bashrc.backup
 ```
-this step is not necessary but if you unsure about what you are doing a backup is always a good place to go back to if things go wrong.
+this step is not necessary but if you unsure about what you are doing a backup is always a good place to go back to, if things go wrong.
 # 
 1. **[Install OhMyPosh]([https://ohmyposh.dev/docs/installation/linux](https://calebschoepp.com/blog/2021/how-to-setup-oh-my-posh-on-ubuntu/))**
+
+
         ```
-        sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
+        sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O   /usr/local/bin/oh-my-posh
         sudo chmod +x /usr/local/bin/oh-my-posh
         ```
         These files will be saved under:`/usr/Local/bin/oh-my-posh`
@@ -26,7 +28,8 @@ this step is not necessary but if you unsure about what you are doing a backup i
         rm ~/.poshthemes/themes.zip
         ```
        These files will be saved under:`/home/user/.poshthemes
-#fonts
+#
+## Fonts
 2. **Download and setup [Nerd Fonds](https://www.nerdfonts.com/font-downloads)**
    - Click to: [Download MesloLG Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/Meslo.zip).
 
