@@ -10,48 +10,36 @@ after you located your .bashrc file type the following command to make a copy fo
 cp .bashrc bashrc.backup
 ```
 this step is not necessary but if you unsure about what you are doing a backup is always a good place to go back to if things go wrong.
+# 
+1. **[Install OhMyPosh]([https://ohmyposh.dev/docs/installation/linux](https://calebschoepp.com/blog/2021/how-to-setup-oh-my-posh-on-ubuntu/))**
+      ```
+      sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
+      sudo chmod +x /usr/local/bin/oh-my-posh
+      ```
+      These files will be saved under:`/usr/Local/bin/oh-my-posh`
+    - Download the themes
+      ```
+      mkdir ~/.poshthemes
+      wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/themes.zip -O ~/.poshthemes/themes.zip
+      unzip ~/.poshthemes/themes.zip -d ~/.poshthemes
+      chmod u+rw ~/.poshthemes/*.json
+      rm ~/.poshthemes/themes.zip
+      ```
+      These files will be saved under:`/home/user/.poshthemes
 #
-2. **[Install Homebrew](https://brew.sh/)**
-     ```
-     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-     ```
-     The installation script installs Homebrew to `/home/linuxbrew/.linuxbrew` 
-   - Install build tools
-     ```
-     sudo apt-get install build-essential procps curl file git
-     ``
-#
-3. **Add Homebrew to your `PATH` and to your bash shell profile script, `~/.profile` on Debian/Ubuntu**
-    - Open .bashrc and .profile files:
+3. **Add Posh-Theme to your `PATH` and to your bash shell profile script, `~/.profile` on Debian/Ubuntu**
+   - Open .bashrc and .profile files:
      ```
      gedit .bashrc
      gedit .profile
      ```
-     
-    - Enter the following commands on the very bottom of the file:
-      ```
-      test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
-      test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-      test -r ~/.profile && echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.profile
-      echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.profile
-      ```
-    - Save file and restart the terminal.
-    - Check path:
-      ```
-      echo $PATH
-      ```
-# 
-3. **[Install OhMyPosh](https://ohmyposh.dev/docs/installation/linux)**
+   - Add the following command to the `.bashrc`file
      ```
-     brew install jandedobbeleer/oh-my-posh/oh-my-posh
+     eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/{theme}.omp.json)"
+
+   - Check path:
      ```
-   - Update
-     ```
-     brew update && brew upgrade oh-my-posh
-     ```
-     In case you see strange behaviour in your shell, reload it after upgrading Oh My Posh. For example in zsh:
-     ```
-     brew update && brew upgrade && exec zsh
+     echo $PATH
      ```
 #
 3. Install zshell
@@ -68,14 +56,7 @@ this step is not necessary but if you unsure about what you are doing a backup i
    - Reboot sesion
    - By opening up the terminal you will be created with the Z Shell configuration function type `2`
 #
-4. **[Install oh-my-posh](https://ohmyposh.dev/docs/installation/linux)**
-   - Install curl
-     ```
-     sudo apt install curl
-     ```
-   - Installer
-     ```
-     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)
+
      ```
      
     
