@@ -29,7 +29,7 @@ this step is not necessary but if you unsure about what you are doing a backup i
        These files will be saved under:`/home/user/.poshthemes
 #
 ## Fonts
-2. **Download and setup [Nerd Fonds](https://www.nerdfonts.com/font-downloads)**
+   - Download and setup [Nerd Fonds](https://www.nerdfonts.com/font-downloads)
    - Click to: [Download MesloLG Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/Meslo.zip).
 
         ```
@@ -38,7 +38,9 @@ this step is not necessary but if you unsure about what you are doing a backup i
         unzip ~/Downloads/Meslo.zip -d ~/.fonts/Meslo
         fc-cache -fv
         ```
-4. **Add Posh-Theme to your `PATH` and to your bash shell profile script, `~/.profile` on Debian/Ubuntu**
+ #
+ ## Add Oh-My-Posh and Themes to PATH
+ **Add Posh-Theme to your `PATH` and to your bash shell profile script, `~/.profile` on Debian/Ubuntu**
    - Open .bashrc and .profile files:
        ```
        gedit .bashrc
@@ -53,6 +55,14 @@ this step is not necessary but if you unsure about what you are doing a backup i
      echo $PATH
      ```
 #
+## Setup new default profile using the installed Font
+  - Go to `Preferences` in the dropdown manue in the top right corner of your shell windwo.
+  - Click on The **+** next to Profile
+  - Turn Custom Fonds on 
+  - Chose your prefered font (MesloGS NF Regular in this example)
+  - Click on the arrow next to your New Profile Name and select `set as default`
+#
+
 3. Install zshell
  
      ```
