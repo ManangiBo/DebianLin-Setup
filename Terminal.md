@@ -47,13 +47,13 @@ this step is not necessary but if you unsure about what you are doing a backup i
        gedit .profile
        ```
    - Add the following command to the `.bashrc`file
-     ```
-     eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/{theme}.omp.json)"
-
+       ```
+       eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/{theme}.omp.json)"
+       ```
    - Check path:
-     ```
-     echo $PATH
-     ```
+       ```
+       echo $PATH
+       ```
 #
 ## Setup new default profile using the installed Font
   - Go to `Preferences` in the dropdown manue in the top right corner of your shell windwo.
@@ -62,22 +62,12 @@ this step is not necessary but if you unsure about what you are doing a backup i
   - Chose your prefered font (MesloGS NF Regular in this example)
   - Click on the arrow next to your New Profile Name and select `set as default`
 #
-
-3. Install zshell
- 
-     ```
-     sudo apt install zsh
-     ```
-   - Change default shell to zshell
-     ```
-     chsh
-     ```
-   - Type `/bin/zsh` Enter
-    
-   - Reboot sesion
-   - By opening up the terminal you will be created with the Z Shell configuration function type `2`
-#
-
+## Create and eddit .json file 
+     ´´´
+     cd ~/.poshthemes
+     touch ManangiLinTerm.omp.json
+     code ManangiLinTerm.omp.json
+     
      ```
      
     
