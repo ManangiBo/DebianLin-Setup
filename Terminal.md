@@ -12,27 +12,36 @@ cp .bashrc bashrc.backup
 this step is not necessary but if you unsure about what you are doing a backup is always a good place to go back to if things go wrong.
 # 
 1. **[Install OhMyPosh]([https://ohmyposh.dev/docs/installation/linux](https://calebschoepp.com/blog/2021/how-to-setup-oh-my-posh-on-ubuntu/))**
-      ```
-      sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
-      sudo chmod +x /usr/local/bin/oh-my-posh
-      ```
-      These files will be saved under:`/usr/Local/bin/oh-my-posh`
-    - Download the themes
-      ```
-      mkdir ~/.poshthemes
-      wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/themes.zip -O ~/.poshthemes/themes.zip
-      unzip ~/.poshthemes/themes.zip -d ~/.poshthemes
-      chmod u+rw ~/.poshthemes/*.json
-      rm ~/.poshthemes/themes.zip
-      ```
-      These files will be saved under:`/home/user/.poshthemes
-#
-3. **Add Posh-Theme to your `PATH` and to your bash shell profile script, `~/.profile` on Debian/Ubuntu**
+        ```
+        sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
+        sudo chmod +x /usr/local/bin/oh-my-posh
+        ```
+        These files will be saved under:`/usr/Local/bin/oh-my-posh`
+   - Download the themes
+        ```
+        mkdir ~/.poshthemes
+        wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/themes.zip -O ~/.poshthemes/themes.zip
+        unzip ~/.poshthemes/themes.zip -d ~/.poshthemes
+        chmod u+rw ~/.poshthemes/*.json
+        rm ~/.poshthemes/themes.zip
+        ```
+       These files will be saved under:`/home/user/.poshthemes
+#fonts
+2. **Download and setup [Nerd Fonds](https://www.nerdfonts.com/font-downloads)**
+   - Click to: [Download MesloLG Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/Meslo.zip).
+
+        ```
+        cd ~
+        mkdir .fonts
+        unzip ~/Downloads/Meslo.zip -d ~/.fonts/Meslo
+        fc-cache -fv
+        ```
+4. **Add Posh-Theme to your `PATH` and to your bash shell profile script, `~/.profile` on Debian/Ubuntu**
    - Open .bashrc and .profile files:
-     ```
-     gedit .bashrc
-     gedit .profile
-     ```
+       ```
+       gedit .bashrc
+       gedit .profile
+       ```
    - Add the following command to the `.bashrc`file
      ```
      eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/{theme}.omp.json)"
