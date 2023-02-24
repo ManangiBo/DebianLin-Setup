@@ -11,8 +11,8 @@ This script will open the default terminal emulator for KDE, which is `konsole`.
     ```
     chmod +x ~/open_terminal.sh
     ```
-5. Now you need to create a custom keyboard shortcut to run the script. Open the KDE System Settings and go to Shortcuts > Custom Shortcuts.
-6. Click on the "Edit" button at the bottom left corner of the window and select "New > Global Shortcut > Command/URL".
+5. Now you need to create a custom keyboard shortcut to run the script. Open the KDE System Settings and go to Shortcuts > Active Manager.
+6. Click on the "Add custom shortcut" button at the bottom left corner of the window and select "New > Global Shortcut > Command/URL".
 7. In the "Trigger" tab, click on the "None" button and press the `Ctrl+T` keys.
 8. In the "Action" tab, enter the full path to the script you just created. For example, if you saved the script in your home directory, the path would be `/home/your_username/open_terminal.sh`.
 9. Click "Apply" and your new keyboard shortcut is now set up.
