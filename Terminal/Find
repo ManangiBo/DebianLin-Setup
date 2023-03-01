@@ -1,0 +1,14 @@
+# Terminal Command setup
+#
+### find locate 
+The “locate” command is the first resort that a Linux user should utilize because it's much faster than anything else out there. The reason for this unmatched speed is that the locate command isn't actually searching your local hard disks for the files or directories that you need to find, but more like reads through the mlocate.db database file which contains all file paths in your system.
+
+Install the `locate` function 
+```
+sudo apt install locate
+```
+Prepare locate command for first use. To update the mlocate.db database before first use, run: 
+```
+sudo updatedb
+```
+> To use locate, open a terminal and type `locate` followed by the `file name` you are looking for.
