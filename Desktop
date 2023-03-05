@@ -1,0 +1,12 @@
+### Ciro-Dock
+to Install copy/paste these lines into a terminal:
+```
+sudo add-apt-repository ppa:cairo-dock-team/ppa
+sudo apt-get update
+```
+
+Then if Cairo-Dock is already installed:
+```
+sudo apt-get dist-upgrade
+```
+#
