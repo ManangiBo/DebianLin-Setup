@@ -26,26 +26,28 @@ Help for MXLinux installing BytzVPN
 .
 1. Install the OpenVPN client in the following way depending on what version of Linux you're using.
 
-$ sudo apt install openvpn #Ubuntu/Debian
-$ sudo yum install openvpn #CentOS 8/7/6
-$ sudo dnf install openvpn #Fedora 22+/CentOS 8
-
+```
+sudo apt install openvpn #Ubuntu/Debian
+sudo yum install openvpn #CentOS 8/7/6
+sudo dnf install openvpn #Fedora 22+/CentOS 8
+```
 2. When on desktop, you'll have to install the network-manager-openvpn package to change VPN settings via a GUI.
-
-$ sudo yum install network-manager-openvpn #CentOS 8/7/6
-$ sudo apt install network-manager-openvpn #Ubuntu/Debian
-$ sudo dnf install network-manager-openvpn #Fedora 22+/CentOS 8
-
+```
+sudo yum install network-manager-openvpn #CentOS 8/7/6
+sudo apt install network-manager-openvpn #Ubuntu/Debian
+sudo dnf install network-manager-openvpn #Fedora 22+/CentOS 8
+```
 3. Once you install the packages, start up OpenVPN to make sure it works properly. Then enable it so that it starts automatically upon startup, thus eliminating the need to start from scratch and re-enter credentials upon each startup. Check its status too.
-
-$ sudo systemctl start openvpn
-$ sudo systemctl enable openvpn
-$ sudo systemctl status openvpn
-
+```
+sudo systemctl start openvpn
+sudo systemctl enable openvpn
+sudo systemctl status openvpn
+```
 4. Next you'll need to import the .ovpn profile for whichever region you select.
-
-$ cd ~
-$ scp [insert profile name here]
+```
+cd ~
+scp [insert profile name here]
+```
 
 5. Go to system Settings and then Network. Click the plus sign next to VPN.
 
