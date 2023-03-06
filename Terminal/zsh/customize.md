@@ -1,4 +1,19 @@
-install zsh using: sudo apt-get install zsh. Once the installation completes, you can check the version using zsh --version, then make zsh your default shell using chsh -s $(which zsh). You’ll need to log out, then log back in for the changes to take effect
+install zsh using: 
+```
+sudo apt-get -y install zsh
+```
+Once the installation completes, you can check the version using `zsh --version`, then make zsh your default shell using `chsh -s /bin/zsh`. You’ll need to log out, then log back in for the changes to take effect.
+
+
+Optional, to find out what shells a currently installed n the system type:
+```
+cat /etc/shells
+```
+to find out more details about your currend shell, type:
+```
+$USER /etc/passwd
+```
+
 #
 install [Oh-My-Zsh](https://ohmyz.sh/)
 ```
