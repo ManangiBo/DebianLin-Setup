@@ -206,11 +206,11 @@ The easiest and recommended way to install Visual Studio Code on Debian 10 syste
    ```
 2. key
 ```
-`  sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-          release.s3.brave.com/brave-browser-archive-keyring.gpg
-   ```
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-       release.s3.brave.com/brave-browser-archive-keyring.gpg
+```
 3. Echo
 ```
-`  echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 ```
   
 4. Update
