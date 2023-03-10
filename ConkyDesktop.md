@@ -29,4 +29,34 @@ Back in the terminal Copy `conky.conf` to `~/.config/conky` folder
 cp -v ~/Documents/Config.files/conky.conf ~/.config/conky
 ```
 > Test: `conky`
+#
+## Hardware and sensors
+
+### [Read Temperature Sensor and chip Data](https://www.cyberciti.biz/faq/howto-linux-get-sensors-information/)
+
+
+Installing lm-sensors on a Debian. Type the following:
+```
+sudo apt-get install lm-sensors
+```
+### Configuer lm_sensors
+To detect hardware monitoring chips, type the following command as the root user:
+```
+sudo sensors-detect
+```
+
+Read sensors chip data such as temperature and fan speed,
+Type the following command at shell prompt:
+```
+sensors
+```
+> After going thrugh this process temperature shuld show up in Conky.
+
+
+Watch your sensors data in real time
+Type the following watch command:
+```
+watch -d sensors
+```
+#
 
