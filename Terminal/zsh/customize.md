@@ -13,12 +13,6 @@ to find out more details about your currend shell, type:
 ```
 $USER /etc/passwd
 ```
-
-#
-install [Oh-My-Zsh](https://ohmyz.sh/)
-```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
 #
 Open `.zshrc` file in VS code 
 ```
@@ -51,6 +45,9 @@ alias lla='exa --header --long --icons -a --classify'
 alias ls='exa --icons --classify'
 alias ll='exa --header --long --icons --classify'
 alias lg='exa --long --git'
+
+# zsh config dir
+# export ZDOTDIR=$HOME/.config/zsh
 
 ```
 Apply the changes: `source ~/.zshrc` or `. ~/.zshrcor` or you can restart your terminal session.
