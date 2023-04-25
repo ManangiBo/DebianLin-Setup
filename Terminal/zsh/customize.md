@@ -46,6 +46,12 @@ alias ls='exa --icons --classify'
 alias ll='exa --header --long --icons --classify'
 alias lg='exa --long --git'
 
+
+# XDG Paths
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_CACHE_HOME=$HOME/.cache
+export XDG_DATA_HOME=$HOME/.local/share
+
 # zsh config dir
 # export ZDOTDIR=$HOME/.config/zsh
 
